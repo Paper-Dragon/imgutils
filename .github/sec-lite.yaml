@@ -1,4 +1,4 @@
-- Target: nmaguiar/imgutils:lite (alpine 3.20.0)
+- Target: nmaguiar/imgutils:lite (alpine 3.20.1)
   Class: os-pkgs
   Type: alpine
 - Target: usr/bin/crictl
@@ -14,8 +14,8 @@
     FixedVersion: 26.0.2
     Status: fixed
     Layer:
-      Digest: sha256:40121cbeab93e389405f93a388ea0322289e5c7868893235ffe9093f241c84e9
-      DiffID: sha256:dabe2d5497a098b6ca6d0b4ba5ac5031c81f70dc98e873bf1c1c1305b868d3d1
+      Digest: sha256:67448822fc4746baee45beceb63c55d03600ecdb60c54055259b34ccf0610428
+      DiffID: sha256:3dc2a7b92bd37de62ee0697ba8df744863e54c61259730e23b923676800582d5
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-32473
     DataSource:
@@ -55,8 +55,8 @@
     FixedVersion: 0.46.0
     Status: fixed
     Layer:
-      Digest: sha256:40121cbeab93e389405f93a388ea0322289e5c7868893235ffe9093f241c84e9
-      DiffID: sha256:dabe2d5497a098b6ca6d0b4ba5ac5031c81f70dc98e873bf1c1c1305b868d3d1
+      Digest: sha256:67448822fc4746baee45beceb63c55d03600ecdb60c54055259b34ccf0610428
+      DiffID: sha256:3dc2a7b92bd37de62ee0697ba8df744863e54c61259730e23b923676800582d5
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-47108
     DataSource:
@@ -106,8 +106,8 @@
     FixedVersion: 1.21.11, 1.22.4
     Status: fixed
     Layer:
-      Digest: sha256:40121cbeab93e389405f93a388ea0322289e5c7868893235ffe9093f241c84e9
-      DiffID: sha256:dabe2d5497a098b6ca6d0b4ba5ac5031c81f70dc98e873bf1c1c1305b868d3d1
+      Digest: sha256:67448822fc4746baee45beceb63c55d03600ecdb60c54055259b34ccf0610428
+      DiffID: sha256:3dc2a7b92bd37de62ee0697ba8df744863e54c61259730e23b923676800582d5
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24790
     DataSource:
@@ -146,7 +146,7 @@
     - https://go.dev/issue/67680
     - https://groups.google.com/g/golang-announce/c/XbxouI9gY7k/m/TuoGEhxIEwAJ
     - https://linux.oracle.com/cve/CVE-2024-24790.html
-    - https://linux.oracle.com/errata/ELSA-2024-4212.html
+    - https://linux.oracle.com/errata/ELSA-2024-4237.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-24790
     - https://pkg.go.dev/vuln/GO-2024-2887
     - https://www.cve.org/CVERecord?id=CVE-2024-24790
@@ -161,8 +161,8 @@
     FixedVersion: 1.21.9, 1.22.2
     Status: fixed
     Layer:
-      Digest: sha256:40121cbeab93e389405f93a388ea0322289e5c7868893235ffe9093f241c84e9
-      DiffID: sha256:dabe2d5497a098b6ca6d0b4ba5ac5031c81f70dc98e873bf1c1c1305b868d3d1
+      Digest: sha256:67448822fc4746baee45beceb63c55d03600ecdb60c54055259b34ccf0610428
+      DiffID: sha256:3dc2a7b92bd37de62ee0697ba8df744863e54c61259730e23b923676800582d5
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-45288
     DataSource:
       ID: govulndb
@@ -190,7 +190,7 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/04/03/16
     - http://www.openwall.com/lists/oss-security/2024/04/05/4
-    - https://access.redhat.com/errata/RHSA-2024:3346
+    - https://access.redhat.com/errata/RHSA-2024:2724
     - https://access.redhat.com/security/cve/CVE-2023-45288
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268018
@@ -204,7 +204,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
-    - https://errata.almalinux.org/8/ALSA-2024-3346.html
+    - https://errata.almalinux.org/9/ALSA-2024-2724.html
     - https://errata.rockylinux.org/RLSA-2024:2724
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
@@ -232,8 +232,8 @@
     FixedVersion: 1.22.3
     Status: fixed
     Layer:
-      Digest: sha256:40121cbeab93e389405f93a388ea0322289e5c7868893235ffe9093f241c84e9
-      DiffID: sha256:dabe2d5497a098b6ca6d0b4ba5ac5031c81f70dc98e873bf1c1c1305b868d3d1
+      Digest: sha256:67448822fc4746baee45beceb63c55d03600ecdb60c54055259b34ccf0610428
+      DiffID: sha256:3dc2a7b92bd37de62ee0697ba8df744863e54c61259730e23b923676800582d5
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24788
     DataSource:
       ID: govulndb
@@ -271,8 +271,8 @@
     FixedVersion: 1.21.11, 1.22.4
     Status: fixed
     Layer:
-      Digest: sha256:40121cbeab93e389405f93a388ea0322289e5c7868893235ffe9093f241c84e9
-      DiffID: sha256:dabe2d5497a098b6ca6d0b4ba5ac5031c81f70dc98e873bf1c1c1305b868d3d1
+      Digest: sha256:67448822fc4746baee45beceb63c55d03600ecdb60c54055259b34ccf0610428
+      DiffID: sha256:3dc2a7b92bd37de62ee0697ba8df744863e54c61259730e23b923676800582d5
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24789
     DataSource:
@@ -311,13 +311,13 @@
     - https://go.dev/issue/66869
     - https://groups.google.com/g/golang-announce/c/XbxouI9gY7k/m/TuoGEhxIEwAJ
     - https://linux.oracle.com/cve/CVE-2024-24789.html
-    - https://linux.oracle.com/errata/ELSA-2024-4212.html
+    - https://linux.oracle.com/errata/ELSA-2024-4237.html
     - https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/U5YAEIA6IUHUNGJ7AIXXPQT6D2GYENX7/
     - https://nvd.nist.gov/vuln/detail/CVE-2024-24789
     - https://pkg.go.dev/vuln/GO-2024-2888
     - https://www.cve.org/CVERecord?id=CVE-2024-24789
     PublishedDate: '2024-06-05T16:15:10.47Z'
-    LastModifiedDate: '2024-06-19T03:15:09.183Z'
+    LastModifiedDate: '2024-07-03T01:48:25.51Z'
   - VulnerabilityID: CVE-2024-24791
     PkgName: stdlib
     PkgIdentifier:
@@ -327,8 +327,8 @@
     FixedVersion: 1.21.12, 1.22.5
     Status: fixed
     Layer:
-      Digest: sha256:40121cbeab93e389405f93a388ea0322289e5c7868893235ffe9093f241c84e9
-      DiffID: sha256:dabe2d5497a098b6ca6d0b4ba5ac5031c81f70dc98e873bf1c1c1305b868d3d1
+      Digest: sha256:67448822fc4746baee45beceb63c55d03600ecdb60c54055259b34ccf0610428
+      DiffID: sha256:3dc2a7b92bd37de62ee0697ba8df744863e54c61259730e23b923676800582d5
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24791
     DataSource:
       ID: govulndb
@@ -342,4 +342,4 @@
     - https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY/m/6MMoAZkMAgAJ
     - https://pkg.go.dev/vuln/GO-2024-2963
     PublishedDate: '2024-07-02T22:15:04.833Z'
-    LastModifiedDate: '2024-07-02T22:15:04.833Z'
+    LastModifiedDate: '2024-07-03T12:53:24.977Z'
