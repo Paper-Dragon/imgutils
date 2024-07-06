@@ -508,7 +508,7 @@
 │                       │      │                  │       tible 
 │                       │      │                  ╰ UID : e28d01cbfe108506 
 │                       │      ├ InstalledVersion: v24.0.7+incompatible 
-│                       │      ├ FixedVersion    : 25.0.2, 24.0.9 
+│                       │      ├ FixedVersion    : 24.0.9, 25.0.2 
 │                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:8abc5fcfb89c16ad120ba545552d4d737f6a0bb5b3be
 │                       │      │                  │         078fdff14ac4dea29dee 
