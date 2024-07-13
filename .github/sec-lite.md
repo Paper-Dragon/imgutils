@@ -177,11 +177,11 @@
                         │     │                            │           /A:N 
                         │     │                            ╰ V3Score : 6.7 
                         │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/06/04/1 
-                        │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2024:4212 
+                        │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2024:4237 
                         │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-24790 
                         │     │                  ├ [3] : https://bugzilla.redhat.com/2292668 
                         │     │                  ├ [4] : https://bugzilla.redhat.com/2292787 
-                        │     │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2024-4212.html 
+                        │     │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2024-4237.html 
                         │     │                  ├ [6] : https://github.com/golang/go/commit/051bdf3fd12a403076
                         │     │                  │       06ff9381138039c5f452f0 (1.21) 
                         │     │                  ├ [7] : https://github.com/golang/go/commit/12d5810cdb1f73cf23
@@ -250,7 +250,7 @@
                         │     │                           ╰ V3Score : 7.5 
                         │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/04/03/16 
                         │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2024/04/05/4 
-                        │     │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:2724 
+                        │     │                  ├ [2] : https://access.redhat.com/errata/RHSA-2024:3346 
                         │     │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2023-45288 
                         │     │                  ├ [4] : https://bugzilla.redhat.com/2268017 
                         │     │                  ├ [5] : https://bugzilla.redhat.com/2268018 
@@ -268,7 +268,7 @@
                         │     │                  │       3-45290 
                         │     │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       4-24783 
-                        │     │                  ├ [16]: https://errata.almalinux.org/9/ALSA-2024-2724.html 
+                        │     │                  ├ [16]: https://errata.almalinux.org/8/ALSA-2024-3346.html 
                         │     │                  ├ [17]: https://errata.rockylinux.org/RLSA-2024:2724 
                         │     │                  ├ [18]: https://go.dev/cl/576155 
                         │     │                  ├ [19]: https://go.dev/issue/65051 
@@ -380,11 +380,11 @@
                         │     │                            │           /A:N 
                         │     │                            ╰ V3Score : 7.5 
                         │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/06/04/1 
-                        │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2024:4212 
+                        │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2024:4237 
                         │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-24789 
                         │     │                  ├ [3] : https://bugzilla.redhat.com/2292668 
                         │     │                  ├ [4] : https://bugzilla.redhat.com/2292787 
-                        │     │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2024-4212.html 
+                        │     │                  ├ [5] : https://errata.almalinux.org/8/ALSA-2024-4237.html 
                         │     │                  ├ [6] : https://github.com/golang/go/commit/c8e40338cf00f3c1d8
                         │     │                  │       6c8fb23863ad67a4c72bcc (1.21) 
                         │     │                  ├ [7] : https://github.com/golang/go/commit/cf501ac0c5fe351a85
