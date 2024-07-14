@@ -121,6 +121,7 @@
       alma: 2
       amazon: 2
       bitnami: 4
+      cbl-mariner: 4
       nvd: 4
       oracle-oval: 2
       photon: 4
@@ -138,11 +139,11 @@
         V3Score: 6.7
     References:
     - http://www.openwall.com/lists/oss-security/2024/06/04/1
-    - https://access.redhat.com/errata/RHSA-2024:4237
+    - https://access.redhat.com/errata/RHSA-2024:4212
     - https://access.redhat.com/security/cve/CVE-2024-24790
     - https://bugzilla.redhat.com/2292668
     - https://bugzilla.redhat.com/2292787
-    - https://errata.almalinux.org/8/ALSA-2024-4237.html
+    - https://errata.almalinux.org/9/ALSA-2024-4212.html
     - https://github.com/golang/go/commit/051bdf3fd12a40307606ff9381138039c5f452f0 (1.21)
     - https://github.com/golang/go/commit/12d5810cdb1f73cf23d7a86462143e9463317fca (1.22)
     - https://github.com/golang/go/issues/67680
@@ -197,7 +198,7 @@
     References:
     - http://www.openwall.com/lists/oss-security/2024/04/03/16
     - http://www.openwall.com/lists/oss-security/2024/04/05/4
-    - https://access.redhat.com/errata/RHSA-2024:3346
+    - https://access.redhat.com/errata/RHSA-2024:2724
     - https://access.redhat.com/security/cve/CVE-2023-45288
     - https://bugzilla.redhat.com/2268017
     - https://bugzilla.redhat.com/2268018
@@ -211,7 +212,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783
-    - https://errata.almalinux.org/8/ALSA-2024-3346.html
+    - https://errata.almalinux.org/9/ALSA-2024-2724.html
     - https://errata.rockylinux.org/RLSA-2024:2724
     - https://go.dev/cl/576155
     - https://go.dev/issue/65051
@@ -300,6 +301,7 @@
       alma: 2
       amazon: 2
       bitnami: 2
+      cbl-mariner: 2
       nvd: 2
       oracle-oval: 2
       photon: 2
@@ -317,11 +319,11 @@
         V3Score: 7.5
     References:
     - http://www.openwall.com/lists/oss-security/2024/06/04/1
-    - https://access.redhat.com/errata/RHSA-2024:4237
+    - https://access.redhat.com/errata/RHSA-2024:4212
     - https://access.redhat.com/security/cve/CVE-2024-24789
     - https://bugzilla.redhat.com/2292668
     - https://bugzilla.redhat.com/2292787
-    - https://errata.almalinux.org/8/ALSA-2024-4237.html
+    - https://errata.almalinux.org/9/ALSA-2024-4212.html
     - https://github.com/golang/go/commit/c8e40338cf00f3c1d86c8fb23863ad67a4c72bcc (1.21)
     - https://github.com/golang/go/commit/cf501ac0c5fe351a8582d20b43562027927906e7 (1.22)
     - https://github.com/golang/go/issues/66869
@@ -364,6 +366,9 @@
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2024-24791
     - https://go.dev/cl/591255
