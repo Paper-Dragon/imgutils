@@ -1,138 +1,9 @@
-- Target: nmaguiar/imgutils:build (alpine 3.20.1)
+- Target: nmaguiar/imgutils:build (alpine 3.20.2)
   Class: os-pkgs
   Type: alpine
 - Target: Java
   Class: lang-pkgs
   Type: jar
-  Vulnerabilities:
-  - VulnerabilityID: CVE-2024-25638
-    PkgName: dnsjava:dnsjava
-    PkgPath: openaf/openaf.jar
-    PkgIdentifier:
-      PURL: pkg:maven/dnsjava/dnsjava@3.5.3
-      UID: fcd3d0c2bf50859
-    InstalledVersion: 3.5.3
-    FixedVersion: 3.6.0
-    Status: fixed
-    Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
-    SeveritySource: ghsa
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-25638
-    DataSource:
-      ID: ghsa
-      Name: GitHub Security Advisory Maven
-      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
-    Title: 'dnsjava: Improper response validation allowing DNSSEC bypass'
-    Description: dnsjava is an implementation of DNS in Java. Records in DNS replies are not checked for their relevance to the query, allowing an attacker to respond with RRs from different zones. This vulnerability is fixed in 3.6.0.
-    Severity: HIGH
-    CweIDs:
-    - CWE-345
-    - CWE-349
-    VendorSeverity:
-      ghsa: 3
-      redhat: 3
-    CVSS:
-      ghsa:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L
-        V3Score: 8.9
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L
-        V3Score: 8.9
-    References:
-    - https://access.redhat.com/security/cve/CVE-2024-25638
-    - https://github.com/dnsjava/dnsjava
-    - https://github.com/dnsjava/dnsjava/commit/bc51df1c455e6c9fb7cbd42fcb6d62d16047818d
-    - https://github.com/dnsjava/dnsjava/security/advisories/GHSA-cfxw-4h78-h7fw
-    - https://nvd.nist.gov/vuln/detail/CVE-2024-25638
-    - https://www.cve.org/CVERecord?id=CVE-2024-25638
-    PublishedDate: '2024-07-22T14:15:04.593Z'
-    LastModifiedDate: '2024-07-24T12:55:13.223Z'
-  - VulnerabilityID: GHSA-crjg-w57m-rqqf
-    PkgName: dnsjava:dnsjava
-    PkgPath: openaf/openaf.jar
-    PkgIdentifier:
-      PURL: pkg:maven/dnsjava/dnsjava@3.5.3
-      UID: fcd3d0c2bf50859
-    InstalledVersion: 3.5.3
-    FixedVersion: 3.6.0
-    Status: fixed
-    Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
-    SeveritySource: ghsa
-    PrimaryURL: https://github.com/advisories/GHSA-crjg-w57m-rqqf
-    DataSource:
-      ID: ghsa
-      Name: GitHub Security Advisory Maven
-      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
-    Title: DNSJava vulnerable to KeyTrap - Denial-of-Service Algorithmic Complexity Attacks
-    Description: |
-      ### Impact
-      Users using the `ValidatingResolver` for DNSSEC validation can run into CPU exhaustion with specially crafted DNSSEC-signed zones.
-
-      ### Patches
-      Users should upgrade to dnsjava v3.6.0
-
-      ### Workarounds
-      Although not recommended, only using a non-validating resolver, will remove the vulnerability. 
-
-      ### References
-      https://www.athene-center.de/en/keytrap
-    Severity: MEDIUM
-    VendorSeverity:
-      ghsa: 2
-    CVSS:
-      ghsa:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
-        V3Score: 6.5
-    References:
-    - https://github.com/dnsjava/dnsjava
-    - https://github.com/dnsjava/dnsjava/commit/07ac36a11578cc1bce0cd8ddf2fe568f062aee78
-    - https://github.com/dnsjava/dnsjava/commit/3ddc45ce8cdb5c2274e10b7401416f497694e1cf
-    - https://github.com/dnsjava/dnsjava/security/advisories/GHSA-crjg-w57m-rqqf
-  - VulnerabilityID: GHSA-mmwx-rj87-vfgr
-    PkgName: dnsjava:dnsjava
-    PkgPath: openaf/openaf.jar
-    PkgIdentifier:
-      PURL: pkg:maven/dnsjava/dnsjava@3.5.3
-      UID: fcd3d0c2bf50859
-    InstalledVersion: 3.5.3
-    FixedVersion: 3.6.0
-    Status: fixed
-    Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
-    SeveritySource: ghsa
-    PrimaryURL: https://github.com/advisories/GHSA-mmwx-rj87-vfgr
-    DataSource:
-      ID: ghsa
-      Name: GitHub Security Advisory Maven
-      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
-    Title: DNSJava affected by KeyTrap - NSEC3 closest encloser proof can exhaust CPU resources
-    Description: |
-      ### Impact
-      Users using the `ValidatingResolver` for DNSSEC validation can run into CPU exhaustion with specially crafted DNSSEC-signed zones.
-
-      ### Patches
-      Users should upgrade to dnsjava v3.6.0
-
-      ### Workarounds
-      Although not recommended, only using a non-validating resolver, will remove the vulnerability.
-
-      ### References
-      https://www.athene-center.de/en/keytrap
-    Severity: MEDIUM
-    VendorSeverity:
-      ghsa: 2
-    CVSS:
-      ghsa:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
-        V3Score: 6.5
-    References:
-    - https://github.com/dnsjava/dnsjava
-    - https://github.com/dnsjava/dnsjava/commit/711af79be3214f52daa5c846b95766dc0a075116
-    - https://github.com/dnsjava/dnsjava/security/advisories/GHSA-mmwx-rj87-vfgr
 - Target: usr/bin/crictl
   Class: lang-pkgs
   Type: gobinary
@@ -143,11 +14,11 @@
       PURL: pkg:golang/github.com/docker/docker@v26.0.1%2Bincompatible
       UID: 493f0dc0950fc8ce
     InstalledVersion: v26.0.1+incompatible
-    FixedVersion: 23.0.14, 26.1.4, 27.1.0
+    FixedVersion: 23.0.14, 26.1.4, 27.1.0, 25.0.6
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-41110
     DataSource:
@@ -171,6 +42,7 @@
     - CWE-444
     - CWE-863
     VendorSeverity:
+      amazon: 3
       ghsa: 4
       redhat: 4
     CVSS:
@@ -208,8 +80,8 @@
     FixedVersion: 26.0.2
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-32473
     DataSource:
@@ -249,8 +121,8 @@
     FixedVersion: 0.46.0
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-47108
     DataSource:
@@ -301,8 +173,8 @@
     FixedVersion: 1.27.16, 1.28.12, 1.29.7, 1.30.3
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-5321
     DataSource:
@@ -351,8 +223,8 @@
     FixedVersion: 1.21.11, 1.22.4
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24790
     DataSource:
@@ -419,8 +291,8 @@
     FixedVersion: 1.21.9, 1.22.2
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-45288
     DataSource:
       ID: govulndb
@@ -494,8 +366,8 @@
     FixedVersion: 1.22.3
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24788
     DataSource:
       ID: govulndb
@@ -539,8 +411,8 @@
     FixedVersion: 1.21.11, 1.22.4
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24789
     DataSource:
@@ -609,8 +481,8 @@
     FixedVersion: 1.21.12, 1.22.5
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24791
     DataSource:
       ID: govulndb
@@ -657,8 +529,8 @@
     FixedVersion: 20.10.9
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2021-41092
     DataSource:
@@ -709,11 +581,11 @@
       PURL: pkg:golang/github.com/docker/docker@v24.0.7%2Bincompatible
       UID: e28d01cbfe108506
     InstalledVersion: v24.0.7+incompatible
-    FixedVersion: 23.0.14, 26.1.4, 27.1.0
+    FixedVersion: 23.0.14, 26.1.4, 27.1.0, 25.0.6
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-41110
     DataSource:
@@ -737,6 +609,7 @@
     - CWE-444
     - CWE-863
     VendorSeverity:
+      amazon: 3
       ghsa: 4
       redhat: 4
     CVSS:
@@ -774,8 +647,8 @@
     FixedVersion: 24.0.9, 25.0.2
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24557
     DataSource:
@@ -826,8 +699,8 @@
     FixedVersion: 0.23.0
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-45288
     DataSource:
@@ -902,8 +775,8 @@
     FixedVersion: 1.21.11, 1.22.4
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24790
     DataSource:
@@ -970,8 +843,8 @@
     FixedVersion: 1.21.9, 1.22.2
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-45288
     DataSource:
       ID: govulndb
@@ -1045,8 +918,8 @@
     FixedVersion: 1.21.8, 1.22.1
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-45289
     DataSource:
       ID: govulndb
@@ -1109,8 +982,8 @@
     FixedVersion: 1.21.8, 1.22.1
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-45290
     DataSource:
       ID: govulndb
@@ -1171,8 +1044,8 @@
     FixedVersion: 1.21.8, 1.22.1
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24783
     DataSource:
       ID: govulndb
@@ -1237,8 +1110,8 @@
     FixedVersion: 1.21.8, 1.22.1
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24784
     DataSource:
       ID: govulndb
@@ -1310,8 +1183,8 @@
     FixedVersion: 1.21.8, 1.22.1
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24785
     DataSource:
       ID: govulndb
@@ -1384,8 +1257,8 @@
     FixedVersion: 1.21.11, 1.22.4
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24789
     DataSource:
@@ -1454,8 +1327,8 @@
     FixedVersion: 1.21.12, 1.22.5
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24791
     DataSource:
       ID: govulndb
@@ -1499,11 +1372,11 @@
       PURL: pkg:golang/github.com/docker/docker@v25.0.5%2Bincompatible
       UID: e4c7c8ca065174dd
     InstalledVersion: v25.0.5+incompatible
-    FixedVersion: 23.0.14, 26.1.4, 27.1.0
+    FixedVersion: 23.0.14, 26.1.4, 27.1.0, 25.0.6
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-41110
     DataSource:
@@ -1527,6 +1400,7 @@
     - CWE-444
     - CWE-863
     VendorSeverity:
+      amazon: 3
       ghsa: 4
       redhat: 4
     CVSS:
@@ -1565,11 +1439,11 @@
       PURL: pkg:golang/github.com/docker/docker@v24.0.7%2Bincompatible
       UID: 4fd2c1b8945eafa2
     InstalledVersion: v24.0.7+incompatible
-    FixedVersion: 23.0.14, 26.1.4, 27.1.0
+    FixedVersion: 23.0.14, 26.1.4, 27.1.0, 25.0.6
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-41110
     DataSource:
@@ -1593,6 +1467,7 @@
     - CWE-444
     - CWE-863
     VendorSeverity:
+      amazon: 3
       ghsa: 4
       redhat: 4
     CVSS:
@@ -1630,8 +1505,8 @@
     FixedVersion: 24.0.9, 25.0.2
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-24557
     DataSource:
@@ -1683,11 +1558,11 @@
       PURL: pkg:golang/github.com/docker/docker@v25.0.3%2Bincompatible
       UID: 8e42d9d752aeeb3
     InstalledVersion: v25.0.3+incompatible
-    FixedVersion: 23.0.14, 26.1.4, 27.1.0
+    FixedVersion: 23.0.14, 26.1.4, 27.1.0, 25.0.6
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-41110
     DataSource:
@@ -1711,6 +1586,7 @@
     - CWE-444
     - CWE-863
     VendorSeverity:
+      amazon: 3
       ghsa: 4
       redhat: 4
     CVSS:
@@ -1748,8 +1624,8 @@
     FixedVersion: 26.0.0-rc3, 25.0.5, 23.0.11
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-29018
     DataSource:
@@ -1808,8 +1684,8 @@
     FixedVersion: 0.7.7
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-6104
     DataSource:
@@ -1855,8 +1731,8 @@
     FixedVersion: 0.23.0
     Status: fixed
     Layer:
-      Digest: sha256:39fee1b979a7f71e432b009f03b48007cdb1cb7364d1fa8f2d88736097c32b12
-      DiffID: sha256:b11655ceba3fde1f39aacde2daa960b028b0ce0b2cb70a962c23e192dffb9118
+      Digest: sha256:13a7c2b20bc4239ebb844cbc88ec9ccf244911b0d0ef958244640ba0a837b973
+      DiffID: sha256:1fa77001c98983d2db74652ff0ea65c7d94eacbc2e529c007aa16e21f81c753f
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-45288
     DataSource:
