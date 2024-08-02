@@ -11,7 +11,7 @@
                         │     │                  │       ible 
                         │     │                  ╰ UID : 493f0dc0950fc8ce 
                         │     ├ InstalledVersion: v26.0.1+incompatible 
-                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0, 25.0.6 
                         │     ├ Status          : fixed 
                         │     ├ Layer            ╭ Digest: sha256:ac597f0a37b80a6fd174f79c3e2b786fd6ea7e398f3a5
                         │     │                  │         98ed8e8aee7f5955da1 
@@ -61,7 +61,8 @@
                         │     ├ CweIDs           ╭ [0]: CWE-187 
                         │     │                  ├ [1]: CWE-444 
                         │     │                  ╰ [2]: CWE-863 
-                        │     ├ VendorSeverity   ╭ ghsa  : 4 
+                        │     ├ VendorSeverity   ╭ amazon: 3 
+                        │     │                  ├ ghsa  : 4 
                         │     │                  ╰ redhat: 4 
                         │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/
                         │     │                  │        │           A:H 
