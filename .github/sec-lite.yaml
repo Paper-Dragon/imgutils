@@ -11,7 +11,7 @@
       PURL: pkg:golang/github.com/docker/docker@v26.0.1%2Bincompatible
       UID: 493f0dc0950fc8ce
     InstalledVersion: v26.0.1+incompatible
-    FixedVersion: 23.0.14, 26.1.4, 27.1.0
+    FixedVersion: 23.0.14, 26.1.4, 27.1.0, 25.0.6
     Status: fixed
     Layer:
       Digest: sha256:ac597f0a37b80a6fd174f79c3e2b786fd6ea7e398f3a598ed8e8aee7f5955da1
@@ -39,6 +39,7 @@
     - CWE-444
     - CWE-863
     VendorSeverity:
+      amazon: 3
       ghsa: 4
       redhat: 4
     CVSS:
