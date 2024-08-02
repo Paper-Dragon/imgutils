@@ -146,7 +146,7 @@
 │                       │     │                  │       ible 
 │                       │     │                  ╰ UID : 493f0dc0950fc8ce 
 │                       │     ├ InstalledVersion: v26.0.1+incompatible 
-│                       │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                       │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0, 25.0.6 
 │                       │     ├ Status          : fixed 
 │                       │     ├ Layer            ╭ Digest: sha256:89c6b141b07bcbd5da5e77c5127b88a07b11a00dfd974
 │                       │     │                  │         49e6042f07e50ec310f 
@@ -196,7 +196,8 @@
 │                       │     ├ CweIDs           ╭ [0]: CWE-187 
 │                       │     │                  ├ [1]: CWE-444 
 │                       │     │                  ╰ [2]: CWE-863 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 4 
+│                       │     ├ VendorSeverity   ╭ amazon: 3 
+│                       │     │                  ├ ghsa  : 4 
 │                       │     │                  ╰ redhat: 4 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/
 │                       │     │                  │        │           A:H 
@@ -850,7 +851,7 @@
 │                       │      │                  │       tible 
 │                       │      │                  ╰ UID : e28d01cbfe108506 
 │                       │      ├ InstalledVersion: v24.0.7+incompatible 
-│                       │      ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                       │      ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0, 25.0.6 
 │                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:89c6b141b07bcbd5da5e77c5127b88a07b11a00dfd97
 │                       │      │                  │         449e6042f07e50ec310f 
@@ -901,7 +902,8 @@
 │                       │      ├ CweIDs           ╭ [0]: CWE-187 
 │                       │      │                  ├ [1]: CWE-444 
 │                       │      │                  ╰ [2]: CWE-863 
-│                       │      ├ VendorSeverity   ╭ ghsa  : 4 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ ghsa  : 4 
 │                       │      │                  ╰ redhat: 4 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H
 │                       │      │                  │        │           /A:H 
@@ -1818,7 +1820,7 @@
 │                             │                  │       ible 
 │                             │                  ╰ UID : e4c7c8ca065174dd 
 │                             ├ InstalledVersion: v25.0.5+incompatible 
-│                             ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                             ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0, 25.0.6 
 │                             ├ Status          : fixed 
 │                             ├ Layer            ╭ Digest: sha256:89c6b141b07bcbd5da5e77c5127b88a07b11a00dfd974
 │                             │                  │         49e6042f07e50ec310f 
@@ -1868,7 +1870,8 @@
 │                             ├ CweIDs           ╭ [0]: CWE-187 
 │                             │                  ├ [1]: CWE-444 
 │                             │                  ╰ [2]: CWE-863 
-│                             ├ VendorSeverity   ╭ ghsa  : 4 
+│                             ├ VendorSeverity   ╭ amazon: 3 
+│                             │                  ├ ghsa  : 4 
 │                             │                  ╰ redhat: 4 
 │                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/
 │                             │                  │        │           A:H 
@@ -1915,7 +1918,7 @@
 │                       │     │                  │       ible 
 │                       │     │                  ╰ UID : 4fd2c1b8945eafa2 
 │                       │     ├ InstalledVersion: v24.0.7+incompatible 
-│                       │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+│                       │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0, 25.0.6 
 │                       │     ├ Status          : fixed 
 │                       │     ├ Layer            ╭ Digest: sha256:89c6b141b07bcbd5da5e77c5127b88a07b11a00dfd974
 │                       │     │                  │         49e6042f07e50ec310f 
@@ -1965,7 +1968,8 @@
 │                       │     ├ CweIDs           ╭ [0]: CWE-187 
 │                       │     │                  ├ [1]: CWE-444 
 │                       │     │                  ╰ [2]: CWE-863 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 4 
+│                       │     ├ VendorSeverity   ╭ amazon: 3 
+│                       │     │                  ├ ghsa  : 4 
 │                       │     │                  ╰ redhat: 4 
 │                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/
 │                       │     │                  │        │           A:H 
@@ -2080,7 +2084,7 @@
                         │     │                  │       ible 
                         │     │                  ╰ UID : 8e42d9d752aeeb3 
                         │     ├ InstalledVersion: v25.0.3+incompatible 
-                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0 
+                        │     ├ FixedVersion    : 23.0.14, 26.1.4, 27.1.0, 25.0.6 
                         │     ├ Status          : fixed 
                         │     ├ Layer            ╭ Digest: sha256:89c6b141b07bcbd5da5e77c5127b88a07b11a00dfd974
                         │     │                  │         49e6042f07e50ec310f 
@@ -2130,7 +2134,8 @@
                         │     ├ CweIDs           ╭ [0]: CWE-187 
                         │     │                  ├ [1]: CWE-444 
                         │     │                  ╰ [2]: CWE-863 
-                        │     ├ VendorSeverity   ╭ ghsa  : 4 
+                        │     ├ VendorSeverity   ╭ amazon: 3 
+                        │     │                  ├ ghsa  : 4 
                         │     │                  ╰ redhat: 4 
                         │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/
                         │     │                  │        │           A:H 
